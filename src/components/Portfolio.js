@@ -383,7 +383,7 @@ const Portfolio = () => {
               <div className="flex flex-col md:flex-row md:items-start gap-4">
                 <div className="md:w-1/4">
                   <span className="text-blue-400 font-semibold">
-                    DEC 2024 - JUN 2025
+                    DEC 2024 - PRESENT
                   </span>
                   <h3 className="text-xl font-bold mt-1">
                     Associate Software Engineer
