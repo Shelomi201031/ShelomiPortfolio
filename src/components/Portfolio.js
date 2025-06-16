@@ -568,7 +568,7 @@ const Portfolio = () => {
                 <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-700/70 transition-all">
                   <span className="text-blue-400 font-semibold">2021</span>
                   <h4 className="text-xl font-bold mt-1">
-                    Diploma in Web Engineering and Software Engineering
+                    Diploma in Web Engineering
                   </h4>
                   <p className="text-gray-300 mt-1">Esoft Metro Campus</p>
                 </div>
