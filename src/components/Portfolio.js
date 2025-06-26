@@ -36,6 +36,7 @@ import {
   FaLightbulb,
   FaPaintBrush,
   FaStream,
+  FaReact,
 } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import profileImage from "../assets/profile.jpeg";
@@ -83,21 +84,24 @@ const Portfolio = () => {
   };
 
   function downloadCV() {
-  // // Use the imported PDF file
-  // const link = document.createElement('a');
-  // link.href = cvPDF;
-  // link.download = "Shelomi_De_Alwis_CV.pdf";
-  
-  // // Append to the document
-  // document.body.appendChild(link);
-  
-  // // Trigger click event
-  // link.click();
-  
-  // // Clean up
-  // document.body.removeChild(link);
-  window.open('https://drive.google.com/file/d/1mDHcjkRcJ_mWs2if9rVxV2Czx6GvHHAt/view?usp=sharing', '_blank');
-}
+    // // Use the imported PDF file
+    // const link = document.createElement('a');
+    // link.href = cvPDF;
+    // link.download = "Shelomi_De_Alwis_CV.pdf";
+
+    // // Append to the document
+    // document.body.appendChild(link);
+
+    // // Trigger click event
+    // link.click();
+
+    // // Clean up
+    // document.body.removeChild(link);
+    window.open(
+      "https://drive.google.com/file/d/1mDHcjkRcJ_mWs2if9rVxV2Czx6GvHHAt/view?usp=sharing",
+      "_blank"
+    );
+  }
 
   const skills = [
     // frontend: ['Angular', 'JavaScript', 'TypeScript', 'HTML', 'CSS'],
@@ -108,6 +112,10 @@ const Portfolio = () => {
     { name: "Python", icon: <FaPython className="text-blue-500" size={24} /> },
     { name: "SQL", icon: <FaDatabase className="text-orange-400" size={24} /> },
     { name: "Angular", icon: <FaAngular className="text-red-600" size={24} /> },
+    {
+      name: "React",
+      icon: <FaReact className="text-cyan-500" size={24} />,
+    },
     { name: "HTML", icon: <FaHtml5 className="text-orange-500" size={24} /> },
     { name: "CSS", icon: <FaCss3Alt className="text-blue-400" size={24} /> },
     {
