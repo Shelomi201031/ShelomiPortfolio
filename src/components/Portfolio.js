@@ -40,6 +40,7 @@ import {
 } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import profileImage from "../assets/profile.jpeg";
+import articleImage from "../assets/research.png";
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -57,6 +58,7 @@ const Portfolio = () => {
         "experience",
         "certifications",
         "skills",
+        "achievements",
         // "projects",
         "contact",
       ];
@@ -82,6 +84,15 @@ const Portfolio = () => {
     }
     setIsMenuOpen(false);
   };
+
+  const handleArticleClick = () => {
+    window.open(
+      "https://epaper.dailynews.lk/SundayObserver?eid=2&edate=06/07/2025&pgid=105524&device=mobile&view=0&sedId=14&uemail=",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
 
   function downloadCV() {
     // // Use the imported PDF file
@@ -228,6 +239,7 @@ const Portfolio = () => {
                 "Experience",
                 "Certifications",
                 "Skills",
+                "Achievements",
                 // "Projects",
                 "Contact",
               ].map((item) => (
@@ -263,6 +275,7 @@ const Portfolio = () => {
                 "Experience",
                 "Certifications",
                 "Skills",
+                "Achievements",
                 // "Projects",
                 "Contact",
               ].map((item) => (
@@ -729,6 +742,46 @@ const Portfolio = () => {
                 </span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section id="achievements" className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16">Achievements</h2>
+
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            {/* Image */}
+            <div className="flex justify-center">
+              <img
+                src={articleImage}
+                alt="Article"
+                className="rounded-2xl shadow-2xl w-full max-w-sm md:max-w-md"
+              />
+            </div>
+
+            {/* Text Content */}
+            <div>
+              <div className="bg-gray-800 p-6 rounded-xl shadow-md text-gray-300 space-y-3">
+                <h3 className="text-xl font-bold mt-1">
+                  Research Featured in Sunday Observer
+                </h3>
+                <p className="text-lg text-white-300 leading-relaxed">
+                  Our research on Vehicle Record/History Maintenance using
+                  Blockchain and Fault Prediction with AI/ML was featured in the
+                  newspaper{" "}
+                  <span className="font-semibold">Sunday Observer</span> in July
+                  2025.
+                </p>
+                <p
+                  onClick={handleArticleClick}
+                  className="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 inline-block cursor-pointer hover:bg-blue-700 transition"
+                >
+                  Read the Article
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
