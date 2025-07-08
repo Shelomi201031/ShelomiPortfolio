@@ -580,7 +580,7 @@ const Portfolio = () => {
                   </p>
                   <div className="mt-2 px-3 py-1 bg-blue-500/20 rounded-lg inline-block">
                     <span className="text-blue-300 font-semibold">
-                      GPA 3.76
+                      GPA 3.78
                     </span>
                   </div>
                 </div>
