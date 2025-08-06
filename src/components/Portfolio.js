@@ -576,11 +576,11 @@ const Portfolio = () => {
                   </h4>
                   <p className="text-gray-300">Software Technology</p>
                   <p className="text-gray-300 mt-1">
-                    University of Sri Jayewardenepura (Reading)
+                    University of Sri Jayewardenepura
                   </p>
                   <div className="mt-2 px-3 py-1 bg-blue-500/20 rounded-lg inline-block">
                     <span className="text-blue-300 font-semibold">
-                      GPA 3.78
+                      GPA 3.78 / 4.00 (First Class)
                     </span>
                   </div>
                 </div>
